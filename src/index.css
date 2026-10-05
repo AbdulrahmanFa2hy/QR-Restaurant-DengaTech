@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  /* Amber/Gold Palette */
+  --color-firstColor-50: #fffbeb;
+  --color-firstColor-100: #fef3c7;
+  --color-firstColor-200: #fde68a;
+  --color-firstColor-300: #fcd34d;
+  --color-firstColor-400: #fbbf24;
+  --color-firstColor-500: #f59e0b;
+  --color-firstColor-600: #d97706;
+  --color-firstColor-700: #b45309;
+  --color-firstColor-800: #92400e;
+  --color-firstColor-900: #78350f;
+
+  /* Orange Palette */
+  --color-secondColor-50: #fff7ed;
+  --color-secondColor-100: #ffedd5;
+  --color-secondColor-200: #fed7aa;
+  --color-secondColor-300: #fdba74;
+  --color-secondColor-400: #fb923c;
+  --color-secondColor-500: #f97316;
+  --color-secondColor-600: #ea580c;
+  --color-secondColor-700: #c2410c;
+  --color-secondColor-800: #9a3412;
+  --color-secondColor-900: #7c2d12;
+
+  /* Gray Palette */
+  --color-thirdColor-50: #f9fafb;
+  --color-thirdColor-100: #f3f4f6;
+  --color-thirdColor-200: #e5e7eb;
+  --color-thirdColor-300: #d1d5db;
+  --color-thirdColor-400: #9ca3af;
+  --color-thirdColor-500: #6b7280;
+  --color-thirdColor-600: #4b5563;
+  --color-thirdColor-700: #374151;
+  --color-thirdColor-800: #1f2937;
+  --color-thirdColor-900: #111827;
+
+  /* Slate Palette */
+  --color-fourthColor-50: #f8fafc;
+  --color-fourthColor-100: #f1f5f9;
+  --color-fourthColor-200: #e2e8f0;
+  --color-fourthColor-300: #cbd5e1;
+  --color-fourthColor-400: #94a3b8;
+  --color-fourthColor-500: #64748b;
+  --color-fourthColor-600: #475569;
+  --color-fourthColor-700: #334155;
+  --color-fourthColor-800: #1e293b;
+  --color-fourthColor-900: #0f172a;
+
+  /* Red Palette */
+  --color-fifthColor-50: #fef2f2;
+  --color-fifthColor-100: #fee2e2;
+  --color-fifthColor-200: #fecaca;
+  --color-fifthColor-300: #fca5a5;
+  --color-fifthColor-400: #f87171;
+  --color-fifthColor-500: #ef4444;
+  --color-fifthColor-600: #dc2626;
+  --color-fifthColor-700: #b91c1c;
+  --color-fifthColor-800: #991b1b;
+  --color-fifthColor-900: #7f1d1d;
+
+  /* Yellow Palette */
+  --color-sixthColor-50: #fefce8;
+  --color-sixthColor-100: #fef9c3;
+  --color-sixthColor-200: #fef08a;
+  --color-sixthColor-300: #fde047;
+  --color-sixthColor-400: #facc15;
+  --color-sixthColor-500: #eab308;
+  --color-sixthColor-600: #ca8a04;
+  --color-sixthColor-700: #a16207;
+  --color-sixthColor-800: #854d0e;
+  --color-sixthColor-900: #713f12;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+    text-align: right;
+  }
+
+  /* RTL Support */
+  * {
+    direction: rtl;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+.leaflet-right,
+.leaflet-control-container {
+  display: none !important;
+}
